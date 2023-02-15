@@ -17,8 +17,8 @@ public class alienlaunching : MonoBehaviour
             
             for (int i = 0; i < 10; i++)
             {
-                GameObject alien = Instantiate(alien, gameObject.transform.position, Quaternion.identity);
-                float rotXAmount = Random.Range(-89, -10);
+                GameObject alien = Instantiate(alienz, gameObject.transform.position, Quaternion.identity);
+                float rotXAmount = Random.Range(-75, -10);
                 float rotYAmount = Random.Range(0, 360);
                 alien.transform.Rotate(rotXAmount, rotYAmount, 0);
                 Rigidbody rb = alien.GetComponent<Rigidbody>();
@@ -28,4 +28,5 @@ public class alienlaunching : MonoBehaviour
             }
         
     }
+}
 }

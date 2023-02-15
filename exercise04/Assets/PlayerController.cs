@@ -9,14 +9,15 @@ public class PlaneScript : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
+    {score = 0
 
-    }
+    }$
 
     // Update is called once per frame
     void Update()
     {
         gameObject.transform.Rotate(0, rotateSpeed * Time.deltaTime, 0, Space.Self);
         gameObject.transform.Translate(transform.forward * forwardSpeed * Time.deltaTime, Space.World);
+            }
     }
 }
