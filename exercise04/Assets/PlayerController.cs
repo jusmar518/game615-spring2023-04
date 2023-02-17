@@ -6,7 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     float forwardSpeed = 50;
     float rotateSpeed = 20;
-
+    public int score = 0;
+    public bool lose = false;
     // Start is called before the first frame update
     void Start()
     {score = 0;
