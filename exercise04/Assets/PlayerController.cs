@@ -17,8 +17,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.Rotate(0, rotateSpeed * Time.deltaTime, 0, Space.Self);
-        gameObject.transform.Translate(transform.forward * forwardSpeed * Time.deltaTime, Space.World);
-            }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            gameObject.transform.Rotate(0, rotateSpeed * Time.deltaTime, 0, Space.Self);
+            gameObject.transform.Translate(transform.forward * forwardSpeed * Time.deltaTime, Space.World);
+        }
+
+    }
     }
 
