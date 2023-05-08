@@ -4,29 +4,30 @@ using UnityEngine;
 
 public class alienlaunching : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
+    public GameObject alienz;
+    public GameObject cow;
 
-    // Update is called once per frame
+
+
     void Update()
-    {    if (Input.GetKeyDown(KeyCode.Space))
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 3; i++)
             {
-                GameObject alien = Instantiate(alienz, gameObject.transform.position, Quaternion.identity);
-                float rotXAmount = Random.Range(-75, -10);
+                GameObject car = Instantiate(alienz, gameObject.transform.position, Quaternion.identity);
+                float rotXAmount = Random.Range(-89, -10);
                 float rotYAmount = Random.Range(0, 360);
-                alien.transform.Rotate(rotXAmount, rotYAmount, 0);
-                Rigidbody rb = alien.GetComponent<Rigidbody>();
-                rb.AddForce(alien.transform.forward * 1000);
+                alienz.transform.Rotate(rotXAmount, rotYAmount, 0);
+                Rigidbody rb = alienz.GetComponent<Rigidbody>();
+                rb.AddForce(alienz.transform.forward * 10);
 
-                Destroy(alien, 2f);
+                
             }
-        
-    }
+    
+}
+
 }
 }
