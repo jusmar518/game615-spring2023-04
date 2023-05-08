@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class alienlaunching : MonoBehaviour
 {
-   public GameObject alienz;
     // Start is called before the first frame update
     void Start()
     {
