@@ -5,16 +5,16 @@ using UnityEngine;
 public class ventis : MonoBehaviour
 {
     // Start is called before the first frame update
-   // void Start()
-  //  {
-  //      score = 0;
+    void Start()
+    {
+        score = 0;
         
- //   }
+    }
 
     // Update is called once per frame
-  //  void Update()
-  //  { if(other.CompareTag("enemy"));
-  //       score -= 1;
+    void Update()
+    { if(other. CompareTag("enemy"));
+         score -= 1;
         
-  //  }
+    }
 }
