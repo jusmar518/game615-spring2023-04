@@ -4,20 +4,11 @@ using UnityEngine;
 
 public class alienlaunching : MonoBehaviour
 {
-<<<<<<< HEAD
     
     public GameObject alienz;
     public GameObject cow;
 
 
-=======
-   public GameObject alienz;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
->>>>>>> 4f67d5c3322b4d2a930933fed7f64b7b1ef1326c
 
     void Update()
     {
