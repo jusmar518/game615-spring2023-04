@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.04365543, g: 0.044817843, b: 0.059549738, a: 1}
+  m_IndirectSpecularColor: {r: 0.23237723, g: 0.2347875, b: 0.27238053, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1629,7 +1629,7 @@ GameObject:
   - component: {fileID: 1826537848}
   - component: {fileID: 1826537851}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: countdownText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
