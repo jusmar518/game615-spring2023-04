@@ -1,16 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerControls : MonoBehaviour
 {
     public float forwardSpeed = 35f;
     public float rotateSpeed = 90f;
-   
+    int score;
     // Start is called before the first frame update
     void Start()
     {
-        
+        score = 0;
     }
 
     // Update is called once per frame
@@ -32,6 +35,13 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
-   
-}
+    public void OnTriggerEnter(Collider other)
+     {
+        if (other.CompareTag("cow"))
+        {
+            score += 1;
+            Destroy(other.gameObject);
+           }
 
+}
+}
