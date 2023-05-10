@@ -1,18 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class scorescript : MonoBehaviour
+public class ScoringSystem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int score = 0;
+    public Text scoreText;
+
+    public void AddPoints(int points)
     {
-        
+        score += points;
+        scoreText.text = "Score: " + score;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ResetScore()
     {
-        
+        score = 0;
+        scoreText.text = "Score: " + score;
+    }
+
+    void Start()
+    {
+        scoreText.text = "Score: " + score;
+    }
+
+    void OnDestroy()
+    {
+        PlayerPrefs.SetInt("Score", score);
+    }
+
+    void Awake()
+    {
+        score = PlayerPrefs.GetInt("Score", 0);
     }
 }
