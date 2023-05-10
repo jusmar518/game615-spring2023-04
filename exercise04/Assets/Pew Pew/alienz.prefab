@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2700808379818880046}
   - component: {fileID: -4452803452042486733}
   - component: {fileID: -5443660694145459699}
+  - component: {fileID: 1039553339559900499}
   m_Layer: 0
   m_Name: alienz
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2206880999044167045}
-  m_LocalRotation: {x: 0.5781161, y: 0.08750663, z: -0.80570257, w: -0.094698064}
+  m_LocalRotation: {x: 0.14117903, y: -0.8357582, z: 0.48450783, w: 0.21640012}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 5.974618, y: 5.974618, z: 5.974618}
   m_ConstrainProportionsScale: 0
@@ -58,7 +59,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2206880999044167045}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f8aa548f97dd484fbb3a96db66b5bba, type: 3}
   m_Name: 
@@ -77,6 +78,19 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1039553339559900499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2206880999044167045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 645a0b0e3f1834450b89fb989cd3157d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
 --- !u!1 &7146545699813150044
 GameObject:
   m_ObjectHideFlags: 0
