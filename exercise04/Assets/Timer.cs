@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -27,12 +28,17 @@ public class Timer : MonoBehaviour
             }
             else
             {
-                Debug.Log("Time UP!");
-                TimeLeft = 0;
-                TimerOn = false;
+                TimerTxt.text = "Time UP!";
+                {SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);}
+
             }
         }
-    }
+
+        
+  
+
+}
+    
 
     void updateTimer(float currentTime)
     {
@@ -43,6 +49,6 @@ public class Timer : MonoBehaviour
 
         TimerTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
-
+    
 }
 
